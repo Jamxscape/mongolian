@@ -1,0 +1,58 @@
+ <scroll-view>
+  <view class="separate"></view>
+  <view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="superPage" data-type="{{item.name}}" data-id="{{item.id}}">
+        <text wx:if="{{id==item.id}}" class="change" style="color: black;border-bottom: 2px solid blue;padding-bottom: 2px;font-size: 10px; font-family: Mongolian Baiti;">{{item.name}}\n{{item.name1}} </text>
+        <text wx:else style='font-size: 10px; font-family: Mongolian Baiti;'>{{item.name}}\n{{item.name1}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="separate1"></view>
+   <view class="separate2"></view>
+
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index" wx:key="">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+  </swiper>  
+    <view class="separate3"></view>
+  <view class="navs1">
+    <block wx:for-items="{{tempitems}}" wx:key="name">
+      <view wx:if="{{id==0}}"class="nav-item1"  data-type="{{item.name}}" data-eid="{{item.eid}}" catchtap="toOrder" >
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text >{{item.name}}\n{{item.name1}}</text>
+      </view><!--百科知识-->
+      <view wx:elif="{{id==1}}"class="nav-item2"  data-type="{{item.name}}" data-eid="{{item.eid}}" catchtap="toOrder">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text >{{item.name}}\n{{item.name1}}</text>
+      </view><!--做客内蒙-->
+      <view wx:elif="{{id==2}}"class="nav-item3"  data-type="{{item.name}}" data-eid="{{item.eid}}">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text>{{item.name}}\n{{item.name1}}</text>
+      </view>   <!--礼仪习俗-->
+      <view wx:elif="{{id==3}}"class="nav-item4"  data-type="{{item.name}}" data-eid="{{item.eid}}">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text>{{item.name}}\n{{item.name1}}</text>
+      </view><!--文化-->
+    </block>
+  </view>
+  <view class="navs1" wx:if="{{id==2}}">
+    <block wx:for-items="{{eItems3_1}}" wx:key="name">
+      <view class="nav-item3" catchtap="toOrder" data-type="{{item.name}}" data-eid="{{item.eid}}">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text>{{item.name}}\n{{item.name1}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="navs1" wx:if="{{id==2}}">
+    <block wx:for-items="{{eItems3_2}}" wx:key="name">
+      <view class="nav-item3" catchtap="toOrder" data-type="{{item.name}}" data-eid="{{item.eid}}">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text>{{item.name}}\n{{item.name1}}</text>
+      </view>
+    </block>
+  </view>
+</scroll-view>

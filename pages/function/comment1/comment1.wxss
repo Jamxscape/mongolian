@@ -1,0 +1,35 @@
+/* pages/function/commnet1/comment1.wxss */
+.comment1{
+  width:100%;
+}
+.search-placeholder{
+  color:	#D3D3D3;
+  line-height: 40px;
+}
+.input{
+ width:100%
+}
+.separate {
+  height: 15rpx;
+  background-color: #f2f2f2;
+}
+
+.category-title {
+  display: flex;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  margin-left: 20rpx;
+}
+.category-title .name {
+  font-size: 30rpx;
+  font-weight: 900;
+}
+.like{
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding: 0 10rpx 0 0;
+  font-size: 24rpx;
+  color:	#D3D3D3;
+  position:absolute;
+  right: 0%;
+}

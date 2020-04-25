@@ -1,0 +1,58 @@
+<!--index.wxml-->
+ <!--<image> </image>-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index" wx:key="">  
+        <swiper-item>  
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>  
+        </swiper-item>  
+      </block>  
+    </swiper>  
+<scroll-view >
+<view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <view class="chinese">{{item.name}}</view>
+        <text>{{item.name1}}</text>
+        <!-- <text>{{item.name}}</text>-->
+        <!-- <view class="chinese" >{{item.name}}</view>-->
+      </view>
+    </block>
+  </view>
+
+  <view class="separate"></view>
+      <view class="category-title">
+        <view class="icon"><image src="../../images/b.png"></image></view>
+        <view><text class="name" style="font-family: Mongolian Baiti ">蒙果社区ᠮᠣᠩᠭᠣᠯ ᠲᠣᠭᠣᠷᠢᠭ</text></view>
+      </view>
+ <view class="separate"></view>
+
+    <view class="navs">
+    <block wx:for-items="{{orderItems2}}" wx:key="name">
+      <view class="nav-item2" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+       <image src="{{item.imageurl}}" class="nav-image" />
+         <view class="chinese">{{item.name}}</view>
+        <text>{{item.name1}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="separate1"></view>
+  <view class="navs">
+    <block  wx:for-items="{{orderItems3}}"  wx:key="name">
+      <view class="nav-item3" catchtap="superPage" data-type="{{item.name}}" data-id="{{item.id}}">
+        <text wx:if="{{id==item.id}}" class="change" style="color: 	#DCDCDC;border-bottom: 1px solid blue;padding-bottom: 8px;">{{item.name}}\n{{item.name1}}</text>
+        <text wx:else >{{item.name}}\n{{item.name1}}</text>
+      </view>
+    </block>
+  </view>
+
+  <view class="navs1" >
+    <block wx:for-items="{{tempitems}}" wx:key="name">
+      <view class="nav-item1"  catchtap="toOrder2" data-type="{{item.name}}" data-teachid="{{item.teachId}}">
+        <image src="{{item.imageurl}}" class="nav-image1" />
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+</view>
+  </scroll-view>

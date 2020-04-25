@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="separate"></view>
+<view class="category-title">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+<button class="userButton"> 编辑用户信息 </button>
+<!--<view class="navs">
+    <block wx:for-items="{{orderItems}}" wx:key="name">
+      <view class="nav-item" catchtap="toOrder" data-type="{{item.name}}" data-typeid="{{item.typeId}}">
+        <image src="{{item.imageurl}}" class="nav-image" />
+        <text >{{item.name}}</text>
+      </view>
+    </block>
+  </view>-->
+ <view class="separate1"></view>
+      <view class="category-title1">
+        <view class="icon"><image src="../../images/mg3.png"></image></view>
+        <view><text class="name">　储藏架</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate2"></view>
+      <view class="category-title2">
+        <view class="icon"><image src="../../images/mg4.png"></image></view>
+        <view><text class="name">　钱袋子</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate3"></view>
+      <view class="category-title3">
+        <view class="icon"><image src="../../images/mg5.png"></image></view>
+        <view><text class="name">　发言册</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate4"></view>
+      <view class="category-title4">
+        <view class="icon"><image src="../../images/mg6.png"></image></view>
+        <view><text class="name">　储囤课</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate5"></view>
+      <view class="category-title5">
+        <view class="icon"><image src="../../images/mg7.png"></image></view>
+        <view><text class="name">　叮叮咚</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate6"></view>
+      <view class="category-title6">
+        <view class="icon"><image src="../../images/mg8.png"></image></view>
+        <view><text class="name">　笔记本</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate7"></view>
+      <view class="category-title7">
+        <view class="icon"><image src="../../images/mg9.png"></image></view>
+        <view><text class="name">　蒙果计划</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate8"></view>
+      <view class="category-title8">
+        <view class="icon"><image src="../../images/mg10.png"></image></view>
+        <view><text class="name">　推荐好友</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate9"></view>
+      <view class="category-title9">
+        <view class="icon"><image src="../../images/mg11.png"></image></view>
+        <view><text class="name">　设　　置</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+      <view class="separate10"></view>
+      <view class="category-title10">
+        <view class="icon"><image src="../../images/mg12.png"></image></view>
+        <view><text class="name">　关于我们</text></view>
+         <view class="icon2"><image src="../../images/san.png"></image></view>
+      </view>
+<view class="separate11"></view>

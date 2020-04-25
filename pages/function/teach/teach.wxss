@@ -1,0 +1,5 @@
+.your-style {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+}

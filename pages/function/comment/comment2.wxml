@@ -1,0 +1,4 @@
+<view class="input">
+<textarea placeholder="想写的，都写在这儿吧" class="comment1" placeholder-class="search-placeholder" maxlength="-1" focus="true"/>
+<button>发帖</button>
+</view>

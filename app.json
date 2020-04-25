@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/study/study",
+    "pages/finder/finder",
+    "pages/function/myLike/myLike",
+    "pages/function/regWord/regWord",
+    "pages/function/translate/translate",
+    "pages/function/daily/daily",
+    "pages/function/comment/comment",
+    "pages/function/comment1/comment1",
+    "pages/user/user",
+    "pages/function/comment/comment2",
+    "pages/function/teach/teach",
+    "pages/funTest/funTest",
+    "pages/game/game",
+    "pages/eco/eco",
+    "pages/techan/techan",
+    "pages/yanyu/yanyu",
+    "pages/travel/travel",
+    "pages/chengjisihan/chengjisihan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学习",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "蒙果站",
+        "iconPath": "images/1-2.png",
+        "selectedIconPath": "images/11-1.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "蒙果教",
+        "iconPath": "images/21-1.png",
+        "selectedIconPath": "images/22-1.png"
+      },
+      {
+        "pagePath": "pages/finder/finder",
+        "text": "蒙果知",
+        "iconPath": "images/32.png",
+        "selectedIconPath": "images/31.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人站",
+        "iconPath": "images/41.png",
+        "selectedIconPath": "images/42.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
